@@ -1,9 +1,6 @@
-import 'package:riverpod_annotation/riverpod_annotation.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-part 'app_state.g.dart';
-
-@riverpod
-class CurrentSignIndex extends _$CurrentSignIndex {
+class CurrentSignIndex extends Notifier<int> {
   @override
   int build() => 0;
 
@@ -16,8 +13,10 @@ class CurrentSignIndex extends _$CurrentSignIndex {
   }
 }
 
-@riverpod
-class StreakCount extends _$StreakCount {
+final currentSignIndexProvider = NotifierProvider<CurrentSignIndex, int>(() => CurrentSignIndex());
+
+
+class StreakCount extends Notifier<int> {
   @override
   int build() => 0;
 
@@ -30,8 +29,10 @@ class StreakCount extends _$StreakCount {
   }
 }
 
-@riverpod
-class AccuracyScore extends _$AccuracyScore {
+final streakCountProvider = NotifierProvider<StreakCount, int>(() => StreakCount());
+
+
+class AccuracyScore extends Notifier<double> {
   @override
   double build() => 0.0;
 
@@ -41,8 +42,10 @@ class AccuracyScore extends _$AccuracyScore {
   }
 }
 
-@riverpod
-class IsSignCorrect extends _$IsSignCorrect {
+final accuracyScoreProvider = NotifierProvider<AccuracyScore, double>(() => AccuracyScore());
+
+
+class IsSignCorrect extends Notifier<bool> {
   @override
   bool build() => false;
 
@@ -51,8 +54,10 @@ class IsSignCorrect extends _$IsSignCorrect {
   }
 }
 
-@riverpod
-class IsDarkMode extends _$IsDarkMode {
+final isSignCorrectProvider = NotifierProvider<IsSignCorrect, bool>(() => IsSignCorrect());
+
+
+class IsDarkMode extends Notifier<bool> {
   @override
   bool build() => true;
 
@@ -60,3 +65,5 @@ class IsDarkMode extends _$IsDarkMode {
     state = !state;
   }
 }
+
+final isDarkModeProvider = NotifierProvider<IsDarkMode, bool>(() => IsDarkMode());

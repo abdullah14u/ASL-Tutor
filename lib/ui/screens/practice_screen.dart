@@ -133,8 +133,8 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
               decoration: BoxDecoration(
                 border: Border.all(
                   color: isCorrect
-                      ? Colors.green.withOpacity(0.8)
-                      : Colors.red.withOpacity(0.3),
+                      ? Colors.green.withValues(alpha: 0.8)
+                      : Colors.red.withValues(alpha: 0.3),
                   width: isCorrect ? 10.0 : 4.0,
                 ),
               ),
@@ -171,7 +171,7 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
             child: Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: Colors.black.withOpacity(0.6),
+                color: Colors.black.withValues(alpha: 0.6),
                 borderRadius: BorderRadius.circular(16),
               ),
               child: Column(
