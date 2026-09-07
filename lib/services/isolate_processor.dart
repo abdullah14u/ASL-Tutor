@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'dart:isolate';
 import 'package:camera/camera.dart';
 import 'package:flutter/foundation.dart';
