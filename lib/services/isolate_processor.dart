@@ -1,8 +1,6 @@
-import 'dart:ui';
+import 'package:flutter/material.dart';
 import 'dart:isolate';
 import 'package:camera/camera.dart';
-import 'package:flutter/foundation.dart';
-import 'package:google_mlkit_commons/google_mlkit_commons.dart';
 import 'package:google_mlkit_pose_detection/google_mlkit_pose_detection.dart';
 import '../models/asl_sign.dart';
 

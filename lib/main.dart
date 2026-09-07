@@ -8,7 +8,7 @@ void main() {
 }
 
 class AslTutorApp extends ConsumerWidget {
-  const AslTutorApp({Key? key}) : super(key: key);
+  const AslTutorApp({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

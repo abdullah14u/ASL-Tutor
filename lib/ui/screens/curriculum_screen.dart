@@ -4,7 +4,7 @@ import '../../providers/app_state.dart';
 import 'practice_screen.dart';
 
 class CurriculumScreen extends ConsumerWidget {
-  const CurriculumScreen({Key? key}) : super(key: key);
+  const CurriculumScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

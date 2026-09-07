@@ -1,4 +1,3 @@
-import 'dart:math';
 import '../models/asl_sign.dart';
 
 class GestureRecognizer {
