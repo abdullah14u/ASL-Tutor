@@ -8,7 +8,7 @@ import '../../services/gesture_recognizer.dart';
 import '../../models/asl_dictionary.dart';
 
 class PracticeScreen extends ConsumerStatefulWidget {
-  const PracticeScreen({Key? key}) : super(key: key);
+  const PracticeScreen({super.key});
 
   @override
   ConsumerState<PracticeScreen> createState() => _PracticeScreenState();
